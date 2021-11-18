@@ -2,11 +2,13 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 import { NavBar } from "../../components/NavBar";
+import { TopSection } from "./TopSection";
 
 export function HomePage() {
   return (
     <PageContainer>
       <NavBar />
+      <TopSection />
     </PageContainer>
   );
 }
