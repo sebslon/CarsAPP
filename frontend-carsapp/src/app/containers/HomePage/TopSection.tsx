@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import McLarenImg from "../../../assets/images/mclaren-orange-big.png";
 import BlobImg from "../../../assets/images/blob.svg";
 import { SCREENS } from "../../components/responsive";
+import { Button } from "../../components/Button";
 
 export function TopSection() {
   return (
@@ -15,6 +16,10 @@ export function TopSection() {
           at the best price for you and get the best quality cars for as long as
           you like
         </Description>
+        <ButtonsContainer>
+          <Button text={"Book a car"} />
+          <Button text={"Sell your car"} theme="filled" />
+        </ButtonsContainer>
       </LeftContainer>
       <RightContainer>
         <BlobContainer>
@@ -27,6 +32,14 @@ export function TopSection() {
     </TopSectionContainer>
   );
 }
+
+const ButtonsContainer = styled.div`
+  ${tw`
+    flex
+    flex-wrap
+    mt-4
+  `}
+`;
 
 const TopSectionContainer = styled.div`
   min-height: 400px;
