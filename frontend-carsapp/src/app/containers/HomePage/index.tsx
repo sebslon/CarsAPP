@@ -4,6 +4,9 @@ import tw from "twin.macro";
 import { BookCard } from "../../components/BookCard";
 import { Marginer } from "../../components/Marginer";
 import { NavBar } from "../../components/NavBar";
+import { AboutUs } from "./AboutUs";
+import { BookingSteps } from "./BookingSteps";
+import { TopCars } from "./TopCars";
 import { TopSection } from "./TopSection";
 
 export function HomePage() {
@@ -13,6 +16,12 @@ export function HomePage() {
       <TopSection />
       <Marginer direction="vertical" margin="4em" />
       <BookCard />
+      <Marginer direction="vertical" margin="6em" />
+      <BookingSteps />
+      <Marginer direction="vertical" margin="5em" />
+      <AboutUs />
+      <Marginer direction="vertical" margin="5em" />
+      <TopCars />
     </PageContainer>
   );
 }
