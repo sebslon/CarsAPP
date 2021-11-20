@@ -1,5 +1,5 @@
 export interface ICar {
-  thumbnailSrc: string;
+  thumbnailUrl: string;
   name: string;
   gearType: string;
   dailyPrice: number;

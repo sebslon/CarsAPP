@@ -15,7 +15,7 @@ interface ICarProps extends ICar {}
 export function Car(props: ICarProps) {
   const {
     name,
-    thumbnailSrc,
+    thumbnailUrl,
     dailyPrice,
     monthlyPrice,
     mileage,
@@ -26,7 +26,7 @@ export function Car(props: ICarProps) {
   return (
     <CarContainer>
       <CarThumbnail>
-        <img src={thumbnailSrc} alt="car" />
+        <img src={thumbnailUrl} alt="car" />
       </CarThumbnail>
       <CarName>{name}</CarName>
       <PricesContainer>
